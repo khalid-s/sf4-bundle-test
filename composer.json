@@ -1,0 +1,19 @@
+{
+    "name": "acme/blog-bundle",
+    "description": "A blog module for symfony 4",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khalid Sookia",
+            "email": "khalidsookia@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acme\\BlogBundle\\": ""
+        }
+    },
+    "require": {},
+    "minimum-stability": "dev"
+}

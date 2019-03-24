@@ -1,0 +1,20 @@
+acme_blog_create:
+    path: /blog
+    controller: Acme\BlogBundle\Controller\ArticleController::create
+    methods: [GET, POST]
+
+acme_blog_list:
+    path: /blog/articles/{page}/{limit}
+    controller: Acme\BlogBundle\Controller\ArticleController::list
+    methods: [GET]
+    requirements:
+        limit: '\d+'
+        page: '\d+'
+    defaults:
+        limit: 10
+        page: 1
+
+acme_blog_show:
+    path: /blog/{slug}
+    controller: Acme\BlogBundle\Controller\ArticleController::show
+    methods: [GET]

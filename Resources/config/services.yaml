@@ -1,0 +1,5 @@
+services:
+  Acme\BlogBundle\Repository\:
+    resource: '../../Repository/ArticleRepository.php'
+    autoconfigure: true
+    tags: ['doctrine.repository_service']
